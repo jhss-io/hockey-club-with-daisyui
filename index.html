@@ -20,6 +20,8 @@
             colors: {
               clifford: "#da373d",
               "primary-color": "#FF4240",
+              "paragraph-color": "#13131899",
+              "footer-text-color": "#FFFFFF99",
             },
           },
         },
@@ -57,7 +59,7 @@
     <header class="container mx-auto">
       <!-- navbar section  -->
       <section>
-        <nav class="my-6 lg:my-12 ">
+        <nav class="my-6 lg:my-12">
           <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -88,7 +90,10 @@
                   <li><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost normal-case text-2xl lg:text-4xl font-extrabold">Hockey's</a>
+              <a
+                class="btn btn-ghost normal-case text-2xl lg:text-4xl font-extrabold"
+                >Hockey's</a
+              >
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -100,7 +105,7 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <button class="hidden lg:block btn btn-ghost btn-circle ">
+              <button class="hidden lg:block btn btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -116,10 +121,51 @@
                   />
                 </svg>
               </button>
-              <a class="btn bg-primary-color text-white text-lg lg:text-xl font-bold">Get Ticket</a>
+              <a
+                class="btn bg-primary-color text-white text-lg lg:text-xl font-bold"
+                >Get Ticket</a
+              >
             </div>
           </div>
         </nav>
+      </section>
+      <!-- hero section  -->
+      <section class="px-5 lg:px-0">
+        <div>
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://i.ibb.co.com/MyJWjx4L/1.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://i.ibb.co.com/j96Bq79Z/4.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center lg:justify-end">
+          <div
+            class="p-4 lg:p-8 bg-black text-white lg:w-[500px] rounded-2xl mt-4 lg:-mt-40 lg:mr-7 lg:absolute"
+          >
+            <h3 class="text-lg font-extrabold">
+              Meet all the heroes from the field
+            </h3>
+            <p class="text-sm font-medium text-footer-text-color">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
       </section>
     </header>
     <main></main>
